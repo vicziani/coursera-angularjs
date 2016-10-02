@@ -24,7 +24,7 @@
     var list = this;
 
     list.isEmpty = function() {
-      return list.found.length === 0;
+      return list.found != undefined && list.found.length === 0;
     }
   }
 
@@ -33,7 +33,6 @@
     var controller = this;
 
     controller.searchTerm = "";
-    controller.items = [];
 
     controller.narrowIt = function() {
       if (controller.searchTerm === "") {
