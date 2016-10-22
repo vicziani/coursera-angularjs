@@ -12,6 +12,10 @@ function MyInfoService() {
   service.setInfo = function (info) {
     service.info = info;
   };
+
+  service.getInfo = function() {
+    return service.info;
+  }
 };
 
 })();
